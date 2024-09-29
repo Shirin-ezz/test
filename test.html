@@ -1,45 +1,10 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>CSS Selector Demo Page</title>
-	<link rel='stylesheet' href='basics.css' />
-	<style type="text/css">
-		body,html{font-size: 18px}
-		p {color: #19A74D}
-		h1 {font-size:32px; font-family:"Gill Sans", Helvetica, Arial, "sans-serif"}
-		a {text-decoration:none;}
-		.airy {line-height: 2}
-		.airy.yellow {color:#D5DE20;}
-		a.external:hover {text-decoration:underline}
-		a,external {color: #E328DC}
-		.bold {font-weight: 700}
-		.italic {font-style: italic}
-		.bold,.italic {font-size: 28px}
-		ul>li {font-family:"Gill Sans", Helvetica, Arial, "sans-serif"; font-size: 24px} 
-		ul li ol li {font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"}
-	</style>
-</head>
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<body>
-	<h1>Welcome to my page</h1>
-	<h2>This is a subheading</h2>
-	<p>And here is some text</p>
-	<ul>
-		<li class='bold'>bold</li>
-		<li class='italic'>italic</li>
-	</ul>
-	<ul>
-		<li>one
-			<ol>
-				<li>first sub item</li>
-			</ol>
-		</li>
-		<li>two</li>
-	</ul>
-	<p class = "airy yellow">And here is more text</p>
-	<p class="airy">This is a demo of<br />line height<br />third line</p>
-	<p style="color:#ff0000">Want more ideas?
-	<a class='external' href="https://www.w3schools.com"  target="_blank">Try www.w3schools.com</a></p>
-</body>
-</html>
+<div class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-home"></i></a>
+  <a href="#"><i class="fa fa-search"></i></a>
+  <a href="#"><i class="fa fa-envelope"></i></a>
+  <a href="#"><i class="fa fa-globe"></i></a>
+  <a href="#"><i class="fa fa-trash"></i></a>
+</div>
