@@ -88,17 +88,18 @@
 
         /* Social media icons */
         .social-icons {
-            position: sticky; 
+            position: fixed; /* Use fixed instead of sticky */
             top: 100px; /* 100px from the top */
             right: 35px; /* 35px in from the right */
-            
+            display: flex;
+            flex-direction: column; /* Stack icons vertically */
+            align-items: flex-end; /* Align icons to the right */
         }
 
         .social-icon {
             width: 30px; /* Set width of each icon */
             height: 30px; /* Set height of each icon */
             margin: 10px 0; /* Spacing between icons */
-            
         }
 
     </style>
@@ -200,7 +201,7 @@
         </table>
     </form>
 
-    <!-- Sticky position icons for Facebook and Twitter (X) -->
+    <!-- Fixed position icons for Facebook and Twitter (X) -->
     <div class="social-icons">
         <a href="https://facebook.com" target="_blank">
             <img src="facebook.png" alt="Facebook" class="social-icon">
