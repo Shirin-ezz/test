@@ -81,10 +81,19 @@
             width: 50%;
         }
 
+        form td {
+            padding: 10px;
+        }
+
+        /* Align the first column (labels) to the right */
+        form td:first-child {
+            text-align: right;
+            width: 40%;
+        }
+
         form label {
             display: inline-block;
-            width: 120px;
-            text-align: right;
+            width: 100%;
             padding-right: 10px;
         }
 
@@ -95,22 +104,18 @@
             border-radius: 4px;
         }
 
-        form td {
-            padding: 10px;
-        }
-
         /* Social media icons */
         .social-icons {
             position: fixed;
-            top: 100px; /* 100px from the top */
-            right: 35px; /* 35px in from the right */
+            top: 35px; /* Adjusted to stick closer to the top */
+            right: 35px; /* Adjusted to stick closer to the right */
             display: flex; /* Arrange the icons horizontally */
         }
 
         .social-icon {
             width: 30px;
             height: 30px;
-            margin: 0 10px; /* Spacing between the icons */
+            margin-left: 10px; /* Spacing between the icons */
         }
     </style>
 </head>
@@ -202,12 +207,15 @@
                 <td><label for="state">State:</label></td>
                 <td>
                     <select id="state" name="state">
+                        <option value="">Select State</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <!-- Add more options as necessary -->
                         <option value="CA">California</option>
                         <option value="NY">New York</option>
                         <option value="MA">Massachusetts</option>
                         <option value="TX">Texas</option>
                         <option value="FL">Florida</option>
-                        <!-- Add more options as necessary -->
                     </select>
                 </td>
             </tr>
