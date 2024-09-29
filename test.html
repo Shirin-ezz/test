@@ -88,9 +88,10 @@
 
         /* Social media icons styling */
         .social-icons {
-            position: fixed !important;
-            top: 100px !important; /* Fixed position from the top */
-            right: 35px !important; /* Fixed position from the right */
+            position: -webkit-sticky; /* For Safari support */
+            position: sticky; /* Sticky position */
+            top: 100px; /* Sticky distance from the top */
+            right: 35px;
             z-index: 1000; /* Ensure it stays on top */
             display: flex; /* Display icons in a column */
             flex-direction: column; /* Arrange in a vertical column */
@@ -209,7 +210,7 @@
         </table>
     </form>
 
-    <!-- Fixed position icons for Facebook and Twitter (X) -->
+    <!-- Sticky position icons for Facebook and Twitter (X) -->
     <div class="social-icons">
         <a href="https://facebook.com" target="_blank">
             <img src="facebook.png" alt="Facebook" class="social-icon">
