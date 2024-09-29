@@ -1,10 +1,230 @@
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Styled</title>
+    <!-- Link to Roboto Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-<div class="icon-bar">
-  <a class="active" href="#"><i class="fa fa-home"></i></a>
-  <a href="#"><i class="fa fa-search"></i></a>
-  <a href="#"><i class="fa fa-envelope"></i></a>
-  <a href="#"><i class="fa fa-globe"></i></a>
-  <a href="#"><i class="fa fa-trash"></i></a>
-</div>
+    <!-- Internal CSS Stylesheet -->
+    <style>
+        /* Apply Google Font */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Style for H1 */
+        h1 {
+            color: #4A90E2; /* Different color for H1 */
+            font-size: 2.5em;
+            margin-bottom: 30px; /* Margin below H1 */
+        }
+
+        /* Style for H2 */
+        h2 {
+            color: #50E3C2; /* Different color for H2 */
+            font-size: 2em;
+            margin-bottom: 30px; /* Margin below H2 */
+        }
+
+        /* Style and center the list */
+        .list-container {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: square;
+            display: inline-block;
+            border: 2px solid #444;
+            padding: 10px;
+        }
+
+        /* Favorite food container with float */
+        .food-container {
+            overflow: auto;
+        }
+
+        .food-image {
+            float: right; /* Float image to the right */
+            margin: 10px;
+            width: 300px;
+            height: auto;
+        }
+
+        /* Table styling with alternating row colors */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th, table td {
+            border: 1px solid #888;
+            padding: 10px;
+            text-align: left; /* Align text to the left */
+        }
+
+        table th {
+            background-color: #e0e0e0; /* Light background color for header */
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Form styling */
+        form table {
+            margin: 20px 0;
+        }
+
+        form label {
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+
+        /* Social media icons styling */
+        .social-icons {
+            position: fixed;
+            top: 100px; /* Fixed position from the top */
+            right: 35px; /* Fixed position from the right */
+            z-index: 1000; /* Ensure it stays on top */
+            display: flex; /* Display icons in a column */
+            flex-direction: column; /* Arrange in a vertical column */
+        }
+
+        .social-icon {
+            width: 40px; /* Set width of each icon */
+            height: 40px; /* Set height of each icon */
+            margin: 10px 0; /* Spacing between icons */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            transition: transform 0.2s ease; /* Smooth scaling transition */
+        }
+
+        /* Hover effect on icons */
+        .social-icon:hover {
+            transform: scale(1.2); /* Scale up the icon on hover */
+        }
+
+        /* Ensure that the social icons do not move with the page */
+        .social-icons a {
+            display: block;
+        }
+
+        /* Additional styling to prevent interference */
+        body, html {
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+    </style>
+</head>
+<body>
+    <!-- Heading 1: Main Title -->
+    <h1>Shirin Ezzatpourghadim</h1>
+
+    <!-- Heading 2: Subtitle / Introduction -->
+    <h2>A Little About Me</h2>
+
+    <!-- A few sentences about a trip -->
+    <p>This summer, I took my first trip to Disney World in Orlando. Stepping into the park, I felt like entering a world of magic and my childhood nostalgia. It made me feel like a kid again.</p>
+
+    <!-- Heading 2: Favorite Pets Section -->
+    <h2>My Favorite Pets</h2>
+
+    <!-- List of favorite pet names -->
+    <div class="list-container">
+        <ul>
+            <li>A dog named Tala</li>
+            <li>A cat named Dizi</li>
+            <li>A dog named Babri</li>
+        </ul>
+    </div>
+
+    <!-- Heading 2: Favorite Food Section -->
+    <h2>My Favorite Food</h2>
+
+    <!-- Favorite food image with text wrapped around it -->
+    <div class="food-container">
+        <img src="Zereshk-Polo.jpg" alt="Favorite Food" class="food-image">
+        <p>
+            My favorite food is Zereshk Polo. In English, it can be translated as Barberry Rice with chicken. I like it to be served with Shirazi salad.
+            This dish is a staple in Persian cuisine, known for its unique combination of tangy barberries and savory chicken, all served on a bed of fluffy saffron rice.
+        </p>
+    </div>
+
+    <!-- Heading 2: Favorite Books Section -->
+    <h2>My Favorite Books</h2>
+
+    <!-- Table of favorite books with alternating row colors -->
+    <table>
+        <tr>
+            <th>Cover</th>
+            <th>Author</th>
+            <th>Summary</th>
+        </tr>
+        <tr>
+            <td><img src="The_Alchemist.jpg" alt="The Alchemist" width="100"></td>
+            <td>Paulo Coelho</td>
+            <td>A journey of self-discovery following a shepherd as he pursues his personal legend.</td>
+        </tr>
+        <tr>
+            <td><img src="Rumi.jpg" alt="Rumi" width="100"></td>
+            <td>Rumi</td>
+            <td>The Masnavi of Rumi is a spiritual and philosophical epic poem that explores the deeper meanings of love, faith, and the soul.</td>
+        </tr>
+        <tr>
+            <td><img src="Existential_Psychotherapy.jpg" alt="Existential Psychotherapy" width="100"></td>
+            <td>Irvin Yalom</td>
+            <td>An exploration of existential psychology, focusing on human experiences of death, freedom, isolation, and meaning.</td>
+        </tr>
+        <tr>
+            <td><img src="Blindness.jpg" alt="Blindness" width="100"></td>
+            <td>José Saramago</td>
+            <td>A novel exploring the collapse of society after a sudden epidemic of blindness strikes.</td>
+        </tr>
+    </table>
+
+    <!-- Heading 2: User Input Form -->
+    <h2>Tell Me About Yourself</h2>
+
+    <!-- Form for user input -->
+    <form>
+        <table>
+            <tr>
+                <td><label for="firstname">First Name:</label></td>
+                <td><input type="text" id="firstname" name="firstname"></td>
+            </tr>
+            <tr>
+                <td><label for="lastname">Last Name:</label></td>
+                <td><input type="text" id="lastname" name="lastname"></td>
+            </tr>
+            <tr>
+                <td><label for="city">City:</label></td>
+                <td><input type="text" id="city" name="city"></td>
+            </tr>
+            <tr>
+                <td><label for="state">State:</label></td>
+                <td>
+                    <select id="state" name="state">
+                        <option value="CA">California</option>
+                        <option value="NY">New York</option>
+                        <option value="MA">Massachusetts</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <!-- Fixed position icons for Facebook and Twitter (X) -->
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">
+            <img src="facebook.png" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="twitter.png" alt="Twitter" class="social-icon">
+        </a>
+    </div>
+</body>
+</html>
