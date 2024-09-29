@@ -88,12 +88,14 @@
 
         /* Social media icons styling */
         .social-icons {
-            position: fixed;
-            top: 100px; /* Fixed position from the top */
-            right: 35px; /* Fixed position from the right */
+            position: fixed !important;
+            top: 100px !important; /* Fixed position from the top */
+            right: 35px !important; /* Fixed position from the right */
             z-index: 1000; /* Ensure it stays on top */
             display: flex; /* Display icons in a column */
             flex-direction: column; /* Arrange in a vertical column */
+            background-color: white; /* Add background for visibility */
+            padding: 10px;
         }
 
         .social-icon {
@@ -107,16 +109,6 @@
         /* Hover effect on icons */
         .social-icon:hover {
             transform: scale(1.2); /* Scale up the icon on hover */
-        }
-
-        /* Ensure that the social icons do not move with the page */
-        .social-icons a {
-            display: block;
-        }
-
-        /* Additional styling to prevent interference */
-        body, html {
-            overflow-x: hidden; /* Prevent horizontal scrolling */
         }
     </style>
 </head>
