@@ -1,21 +1,186 @@
-<style>
-h1 {
-  
-position
-: 
-fixed
-;
-  
-top
-: 50px;
-  
-right
-: 10px;
-}
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Me</title>
+    <!-- Include Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        /* Set the font to a sans serif Google font */
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
 
+        /* Set the color and size of all H1 and H2 and leave a margin of 30px below them */
+        h1 {
+            color: #003366;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #003366;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        /* Style for the list */
+        ul {
+            border: 1px solid black;
+            width: fit-content;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        /* Add background color to alternate lines in the table */
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Styles for the food image and description */
+        .food-container {
+            display: flex;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+        .food-image {
+            background-image: url('Zereshk-Polo.jpg');
+            background-size: cover;
+            width: 250px;
+            height: 200px;
+            margin-right: 15px;
+        }
+        .food-description {
+            flex-grow: 1;
+        }
+
+        /* Form styles */
+        form {
+            margin: 30px auto;
+            width: 400px;
+        }
+        form table {
+            width: 100%;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form td {
+            padding: 5px;
+        }
+        form td:first-child {
+            text-align: right;
+            width: 40%;
+        }
+        form input, form select {
+            width: 95%;
+            padding: 5px;
+        }
+
+        /* Styles for social media icons */
+        .social-icons {
+            position: fixed;
+            top: 100px;
+            right: 35px;
+        }
+        .social-icons img {
+            width: 24px;
+            margin: 5px;
+        }
+    </style>
+</head>
 <body>
-  <h1>This is a heading</h1>
-  <p>This is a paragraph</p>
-  <p>This is a paragraph</p>
+    <!-- Name in Heading 1 -->
+    <h1>Shirin Ezzatpourghadim</h1>
+
+    <!-- A few sentences about a trip -->
+    <p>This summer, I took my first trip to Disney World in Orlando. Stepping into the park, I felt like I was entering a world of magic and childhood nostalgia. It made me feel like a kid again.</p>
+
+    <!-- Bulleted list of 3 favorite pet names and their types -->
+    <ul>
+        <li>A dog named Tala</li>
+        <li>A cat named Dizi</li>
+        <li>A dog named Babri</li>
+    </ul>
+
+    <!-- Link to favorite restaurant -->
+    <p>
+        My favorite restaurant is <a href="https://www.ravaghrestaurants.com/" target="_blank">Ravagh</a> because they serve the best Persian foods in the US! I always visit here when I go to NYC.
+    </p>
+
+    <!-- Image of favorite food with explanatory text -->
+    <div class="food-container">
+        <div class="food-image"></div>
+        <div class="food-description">
+            <p>
+                My favorite food is Zereshk Polo. In English, it can be translated as Barberry Rice with chicken. I like it to be served with Shirazi salad. 
+                This dish is my favorite Persian food and is often served during gatherings. The tangy taste of barberries mixed with the saffron rice 
+                creates an unforgettable flavor. The chicken is tender and perfectly seasoned with saffron to complement the dish. It reminds me of my childhood.
+            </p>
+        </div>
+    </div>
+
+    <!-- Table of favorite books -->
+    <table border="1" cellspacing="0" cellpadding="10">
+        <tr>
+            <th>Cover</th>
+            <th>Author</th>
+            <th>Summary</th>
+        </tr>
+        <tr>
+            <td><img src="The_Alchemist.jpg" alt="The Alchemist" width="100"></td>
+            <td>Paulo Coelho</td>
+            <td>A journey of self-discovery following a shepherd as he pursues his personal legend.</td>
+        </tr>
+        <tr>
+            <td><img src="Rumi.jpg" alt="Rumi" width="100"></td>
+            <td>Rumi</td>
+            <td>An epic poem that explores the deeper meanings of love, faith, and the soul.</td>
+        </tr>
+        <tr>
+            <td><img src="Existential_Psychotherapy.jpg" alt="Existential Psychotherapy" width="100"></td>
+            <td>Irvin Yalom</td>
+            <td>An exploration of existential psychology, focusing on human experiences of death, freedom, isolation, and meaning.</td>
+        </tr>
+        <tr>
+            <td><img src="Blindness.jpg" alt="Blindness" width="100"></td>
+            <td>José Saramago</td>
+            <td>A novel that explores the collapse of society after a sudden epidemic of blindness strikes.</td>
+        </tr>
+    </table>
+
+    <!-- Form to get user's first and last name, city, and state -->
+    <form>
+        <table>
+            <tr>
+                <td><label for="firstName">First Name:</label></td>
+                <td><input type="text" id="firstName" name="firstName"></td>
+            </tr>
+            <tr>
+                <td><label for="lastName">Last Name:</label></td>
+                <td><input type="text" id="lastName" name="lastName"></td>
+            </tr>
+            <tr>
+                <td><label for="city">City:</label></td>
+                <td><input type="text" id="city" name="city"></td>
+            </tr>
+            <tr>
+                <td><label for="state">State:</label></td>
+                <td>
+                    <select id="state" name="state">
+                        <option value="">Select State</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <!-- Add other states as needed -->
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="https://www.facebook.com/yourprofile"><img src="facebook-icon.png" alt="Facebook"></a>
+        <a href="https://www.twitter.com/yourprofile"><img src="twitter-icon.png" alt="Twitter"></a>
+    </div>
 </body>
+</html>
