@@ -120,16 +120,18 @@
         /* Social media icons */
         .social-icons {
             position: fixed; /* Fixed position to stay at the corner */
-            top: 20px; /* 20px from the top of the page */
-            right: 20px; /* 20px from the right edge of the page */
+            top: 20px; /* Distance from top */
+            right: 20px; /* Distance from right edge */
+            z-index: 9999; /* Ensure it stays on top */
             display: flex;
-            flex-direction: column; /* Stack icons vertically */
+            gap: 10px; /* Spacing between the icons */
+            align-items: center; /* Align vertically */
         }
 
         .social-icon {
             width: 30px;
             height: 30px;
-            margin: 10px 0; /* Spacing between icons */
+            cursor: pointer;
         }
     </style>
 </head>
@@ -247,4 +249,9 @@
         <a href="https://facebook.com" target="_blank">
             <img src="facebook.png" alt="Facebook" class="social-icon">
         </a>
-        <a href="https://twitter.com" target
+        <a href="https://twitter.com" target="_blank">
+            <img src="twitter.png" alt="Twitter" class="social-icon">
+        </a>
+    </div>
+</body>
+</html>
