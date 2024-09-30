@@ -50,15 +50,14 @@
             text-align: left; 
         }
 
-        /* Favorite food container with image on the right */
+        /* Favorite food container with text wrapping */
         .food-container {
-            display: flex;
-            justify-content: flex-start; /* Align items to the left */
-            align-items: flex-start; /* Align items vertically */
+            overflow: auto;
         }
 
         .food-image {
-            margin-left: 15px; /* Spacing between the image and text */
+            float: right; 
+            margin: 10px;
             width: 300px;
             height: auto;
         }
@@ -73,11 +72,11 @@
         table th, table td {
             border: 1px solid #c89f9c;
             padding: 10px;
-            text-align: left; /* Align text to the left */
+            text-align: left;
         }
 
         table th {
-            background-color: #eee2df; 
+            background-color: #eee2df;
         }
 
         table tr:nth-child(even) {
@@ -94,7 +93,6 @@
             padding: 10px;
         }
 
-        /* Align the first column (labels) to the right */
         form td:first-child {
             text-align: right;
             width: 40%;
@@ -116,15 +114,15 @@
         /* Social media icons */
         .social-icons {
             position: fixed;
-            top: 100px; 
-            right: 35px; 
-            display: flex; 
+            top: 100px;
+            right: 35px;
+            display: flex;
         }
 
         .social-icon {
             width: 30px;
             height: 30px;
-            margin-left: 10px; /* Spacing between the icons */
+            margin-left: 10px;
         }
     </style>
 </head>
@@ -155,46 +153,44 @@
 
     <!-- Favorite food image with text wrapped around it -->
     <div class="food-container">
-        <div>
-            <p>
-                My favorite food is Zereshk Polo. In English, it can be translated as Barberry Rice with chicken. I like it to be served with Shirazi salad.
-                This dish is a staple in Persian cuisine, known for its unique combination of tangy barberries and savory chicken, all served on a bed of fluffy saffron rice.
-            </p>
-        </div>
         <img src="Zereshk-Polo.jpg" alt="Favorite Food" class="food-image">
+        <p>
+            My favorite food is Zereshk Polo. In English, it can be translated as Barberry Rice with chicken. I like it to be served with Shirazi salad.
+            This dish is a staple in Persian cuisine, known for its unique combination of tangy barberries and savory chicken, all served on a bed of fluffy saffron rice.
+        </p>
     </div>
 
     <!-- Heading 2: Favorite Books Section -->
     <h2>My Favorite Books</h2>
 
-    <!-- Table of favorite books with alternating row colors -->
+    <!-- Table of favorite books with alternating row colors and new "Book Name" column -->
     <table>
         <tr>
-            <th>Book Name</th> <!-- New column for Book Name -->
+            <th>Book Name</th>
             <th>Cover</th>
             <th>Author</th>
             <th>Summary</th>
         </tr>
         <tr>
-            <td>The Alchemist</td> <!-- Book Name Column -->
+            <td>The Alchemist</td>
             <td><img src="The_Alchemist.jpg" alt="The Alchemist" width="100"></td>
             <td>Paulo Coelho</td>
             <td>A journey of self-discovery following a shepherd as he pursues his personal legend.</td>
         </tr>
         <tr>
-            <td>The Masnavi of Rumi</td> <!-- Book Name Column -->
+            <td>The Masnavi of Rumi</td>
             <td><img src="Rumi.jpg" alt="Rumi" width="100"></td>
             <td>Rumi</td>
             <td>The Masnavi of Rumi is a spiritual and philosophical epic poem that explores the deeper meanings of love, faith, and the soul.</td>
         </tr>
         <tr>
-            <td>Existential Psychotherapy</td> <!-- Book Name Column -->
+            <td>Existential Psychotherapy</td>
             <td><img src="Existential_Psychotherapy.jpg" alt="Existential Psychotherapy" width="100"></td>
             <td>Irvin Yalom</td>
             <td>An exploration of existential psychology, focusing on human experiences of death, freedom, isolation, and meaning.</td>
         </tr>
         <tr>
-            <td>Blindness</td> <!-- Book Name Column -->
+            <td>Blindness</td>
             <td><img src="Blindness.jpg" alt="Blindness" width="100"></td>
             <td>José Saramago</td>
             <td>A novel exploring the collapse of society after a sudden epidemic of blindness strikes.</td>
@@ -245,4 +241,6 @@
         <a href="https://twitter.com" target="_blank">
             <img src="twitter.png" alt="Twitter" class="social-icon">
         </a>
- 
+    </div>
+</body>
+</html>
