@@ -50,14 +50,19 @@
             text-align: left; 
         }
 
-        /* Favorite food container with text wrapping */
+        /* Favorite food container */
         .food-container {
-            overflow: auto;
+            display: flex;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+
+        .food-text {
+            flex: 1; /* Allow the text to take up the remaining space */
         }
 
         .food-image {
-            float: right; 
-            margin: 10px;
+            margin-left: 20px; /* Spacing between the image and text */
             width: 300px;
             height: auto;
         }
@@ -153,11 +158,13 @@
 
     <!-- Favorite food image with text wrapped around it -->
     <div class="food-container">
+        <div class="food-text">
+            <p>
+                My favorite food is Zereshk Polo. In English, it can be translated as Barberry Rice with chicken. I like it to be served with Shirazi salad.
+                This dish is a staple in Persian cuisine, known for its unique combination of tangy barberries and savory chicken, all served on a bed of fluffy saffron rice.
+            </p>
+        </div>
         <img src="Zereshk-Polo.jpg" alt="Favorite Food" class="food-image">
-        <p>
-            My favorite food is Zereshk Polo. In English, it can be translated as Barberry Rice with chicken. I like it to be served with Shirazi salad.
-            This dish is a staple in Persian cuisine, known for its unique combination of tangy barberries and savory chicken, all served on a bed of fluffy saffron rice.
-        </p>
     </div>
 
     <!-- Heading 2: Favorite Books Section -->
@@ -244,3 +251,4 @@
     </div>
 </body>
 </html>
+
