@@ -1,89 +1,248 @@
-Company Logo
-Log in
-Sign up
-CSS
-Type
-NAME
-UPDATED
-SIZE
-
-
-
-Details
-Folder Properties
-Owner
-Lisa Diorio
-Enterprise Owner
-Tufts University
-Created
-May 31, 2024, 6:04 PM
-Modified
-May 31, 2024, 6:05 PM
-Size
-5.9 KB
-css_lists.html
-CSS
-·
-Updated May 28, 2023 by Lisa Diorio
-
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>List Demo with CSS</title>
-	<style type="text/css">
-		ol {color: #2036C7}
-		ol.items {padding-left: 80px}
-		ol li:first-child{font-weight: 700}
-		ol li ul li {font-weight: 400 !important;}
-		
-		.nav li {display: inline-block; font-size: 20px; padding: 5px 20px 5px 20px; box-sizing:border-box;
-		border: 1px solid #fff; color: #000}
-		
-		.nav li:hover {border: 1px solid #333; color: #fff; background-color: #5961A3}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Styled</title>
+    <!-- Link to Roboto Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-		.nav li a {text-decoration: none; color: inherit}	
-	</style>
+    <!-- Internal CSS Stylesheet -->
+    <style>
+        /* Apply Google Font */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Style for H1 */
+        h1 {
+            color: #b36a5e; 
+            font-size: 2.5em;
+            margin-bottom: 30px; 
+        }
+
+        /* Style for H2 */
+        h2 {
+            color: #c97c5d; 
+            font-size: 2em;
+            margin-bottom: 30px; 
+        }
+
+        /* Style and center the list */
+        .list-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: square;
+            border: 2px solid #A8938E; 
+            padding: 10px 20px; 
+            margin: 0; 
+            text-align: left; 
+        }
+
+        li {
+            margin-left: 15px; 
+            text-align: left; 
+        }
+
+        /* Favorite food container with image on the right */
+        .food-container {
+            display: flex;
+            justify-content: flex-start; /* Align items to the left */
+            align-items: flex-start; /* Align items vertically */
+        }
+
+        .food-image {
+            margin-left: 15px; /* Spacing between the image and text */
+            width: 300px;
+            height: auto;
+        }
+
+        /* Table styling with alternating row colors */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table th, table td {
+            border: 1px solid #c89f9c;
+            padding: 10px;
+            text-align: left; /* Align text to the left */
+        }
+
+        table th {
+            background-color: #eee2df; 
+        }
+
+        table tr:nth-child(even) {
+            background-color: #eed7c5;
+        }
+
+        /* Form styling */
+        form table {
+            margin: 20px 0;
+            width: 50%;
+        }
+
+        form td {
+            padding: 10px;
+        }
+
+        /* Align the first column (labels) to the right */
+        form td:first-child {
+            text-align: right;
+            width: 40%;
+        }
+
+        form label {
+            display: inline-block;
+            width: 100%;
+            padding-right: 10px;
+        }
+
+        input, select {
+            width: 200px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Social media icons */
+        .social-icons {
+            position: fixed;
+            top: 100px; 
+            right: 35px; 
+            display: flex; 
+        }
+
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            margin-left: 10px; /* Spacing between the icons */
+        }
+    </style>
 </head>
-
 <body>
-	<h3>Ordered List</h3>
-	<ol start='1' class ="items">
-		<li>first item</li>
-		<li>second item</li>
-		<li>third item</li>
-	</ol>
-	<h3>Navigation</h3>
-	<ul class="nav">
-		<li><a href="#">about</a></li>
-		<li><a href="#">services</a></li>
-		<li><a href="#">contact</a></li>
-	</ul>
-	<h3>Nested List</h3>
-	<ol type='A'>
-		<li>item 1
-			<ul>
-				<li>first item</li>
-				<li>second item</li>
-				<li>third item</li>
-			</ul>
-		</li>
-		<li>item 2</li>
-	</ol>
-</body>
-</html>
+    <!-- Heading 1: Main Title -->
+    <h1>Shirin Ezzatpourghadim</h1>
 
+    <!-- Heading 2: Subtitle / Introduction -->
+    <h2>A Little About Me</h2>
 
+    <!-- A few sentences about a trip -->
+    <p>This summer, I took my first trip to Disney World in Orlando. Stepping into the park, I felt like entering a world of magic and my childhood nostalgia. It made me feel like a kid again.</p>
 
-Details
+    <!-- Heading 2: Favorite Pets Section -->
+    <h2>My Favorite Pets</h2>
 
-File Properties
-Owner
-Lisa Diorio
-Uploader
-Lisa Diorio
-Created
-May 28, 2023, 10:22 PM
-Modified
-May 28, 2023, 10:22 PM
-Size
-1 KB
+    <!-- List of favorite pet names -->
+    <div class="list-container">
+        <ul>
+            <li>A dog named Tala</li>
+            <li>A cat named Dizi</li>
+            <li>A dog named Babri</li>
+        </ul>
+    </div>
+
+    <!-- Heading 2: Favorite Food Section -->
+    <h2>My Favorite Food</h2>
+
+    <!-- Favorite food image with text wrapped around it -->
+    <div class="food-container">
+        <div>
+            <p>
+                My favorite food is Zereshk Polo. In English, it can be translated as Barberry Rice with chicken. I like it to be served with Shirazi salad.
+                This dish is a staple in Persian cuisine, known for its unique combination of tangy barberries and savory chicken, all served on a bed of fluffy saffron rice.
+            </p>
+        </div>
+        <img src="Zereshk-Polo.jpg" alt="Favorite Food" class="food-image">
+    </div>
+
+    <!-- Heading 2: Favorite Books Section -->
+    <h2>My Favorite Books</h2>
+
+    <!-- Table of favorite books with alternating row colors -->
+    <table>
+        <tr>
+            <th>Book Name</th> <!-- New column for Book Name -->
+            <th>Cover</th>
+            <th>Author</th>
+            <th>Summary</th>
+        </tr>
+        <tr>
+            <td>The Alchemist</td> <!-- Book Name Column -->
+            <td><img src="The_Alchemist.jpg" alt="The Alchemist" width="100"></td>
+            <td>Paulo Coelho</td>
+            <td>A journey of self-discovery following a shepherd as he pursues his personal legend.</td>
+        </tr>
+        <tr>
+            <td>The Masnavi of Rumi</td> <!-- Book Name Column -->
+            <td><img src="Rumi.jpg" alt="Rumi" width="100"></td>
+            <td>Rumi</td>
+            <td>The Masnavi of Rumi is a spiritual and philosophical epic poem that explores the deeper meanings of love, faith, and the soul.</td>
+        </tr>
+        <tr>
+            <td>Existential Psychotherapy</td> <!-- Book Name Column -->
+            <td><img src="Existential_Psychotherapy.jpg" alt="Existential Psychotherapy" width="100"></td>
+            <td>Irvin Yalom</td>
+            <td>An exploration of existential psychology, focusing on human experiences of death, freedom, isolation, and meaning.</td>
+        </tr>
+        <tr>
+            <td>Blindness</td> <!-- Book Name Column -->
+            <td><img src="Blindness.jpg" alt="Blindness" width="100"></td>
+            <td>José Saramago</td>
+            <td>A novel exploring the collapse of society after a sudden epidemic of blindness strikes.</td>
+        </tr>
+    </table>
+
+    <!-- Heading 2: User Input Form -->
+    <h2>Tell Me About Yourself</h2>
+
+    <!-- Form for user input -->
+    <form>
+        <table>
+            <tr>
+                <td><label for="firstname">First Name:</label></td>
+                <td><input type="text" id="firstname" name="firstname"></td>
+            </tr>
+            <tr>
+                <td><label for="lastname">Last Name:</label></td>
+                <td><input type="text" id="lastname" name="lastname"></td>
+            </tr>
+            <tr>
+                <td><label for="city">City:</label></td>
+                <td><input type="text" id="city" name="city"></td>
+            </tr>
+            <tr>
+                <td><label for="state">State:</label></td>
+                <td>
+                    <select id="state" name="state">
+                        <option value="">Select State</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="CA">California</option>
+                        <option value="NY">New York</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="TX">Texas</option>
+                        <option value="FL">Florida</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <!-- Fixed position icons for Facebook and Twitter (X) -->
+    <div class="social-icons">
+        <a href="https://facebook.com" target="_blank">
+            <img src="facebook.png" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="twitter.png" alt="Twitter" class="social-icon">
+        </a>
+ 
