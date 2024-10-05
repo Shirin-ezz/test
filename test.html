@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Problem 1 - User Information</title>
-</head>
-<body>
-    <h1>User Information</h1>
-    <p id="childrenMessage"></p>
-    <script>
-        // Ask for the user's first and last names
-        let firstName = prompt("What is your first name?", "First Name");
-        let lastName = prompt("What is your last name?", "Last Name");
-        
-        // Display the full name in an alert popup
+    <title>JS1</title>
+    <script type="text/javascript">
+        // Prompt for first and last names
+        var firstName = prompt("Please enter your first name:");
+        var lastName = prompt("Please enter your last name:");
+
+        // Display the full name in an alert
         alert("Your name is " + firstName + " " + lastName);
 
         // Ask for the number of children
-        let numberOfChildren = prompt("How many children do you have?", "0");
-        numberOfChildren = parseInt(numberOfChildren);  // Convert input to an integer
+        var numChildren = prompt("How many children do you have?");
+        numChildren = parseInt(numChildren);
 
-        // Determine the appropriate message
-        let childrenMessage;
-        if (numberOfChildren === 0) {
-            childrenMessage = "You have no children.";
-        } else if (numberOfChildren === 1) {
-            childrenMessage = "You have 1 child.";
+        // Determine the correct message
+        var message = "";
+        if (isNaN(numChildren) || numChildren < 0) {
+            message = "Invalid number of children.";
+        } else if (numChildren === 0) {
+            message = "You have no children.";
+        } else if (numChildren === 1) {
+            message = "You have 1 child.";
         } else {
-            childrenMessage = `You have ${numberOfChildren} children.`;
+            message = "You have " + numChildren + " children.";
         }
 
-        // Display the message on the webpage
-        document.getElementById("childrenMessage").innerHTML = childrenMessage;
+        // Display the message on the page
+        document.write("<p>" + message + "</p>");
     </script>
+</head>
+<body>
 </body>
 </html>
