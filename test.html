@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JS1</title>
-    <script type="text/javascript">
-        // Prompt for first and last names
-        var firstName = prompt("Please enter your first name:");
-        var lastName = prompt("Please enter your last name:");
-
-        // Display the full name in an alert
-        alert("Your name is " + firstName + " " + lastName);
-
-        // Ask for the number of children
-        var numChildren = prompt("How many children do you have?");
-        numChildren = parseInt(numChildren);
-
-        // Determine the correct message
-        var message = "";
-        if (isNaN(numChildren) || numChildren < 0) {
-            message = "Invalid number of children.";
-        } else if (numChildren === 0) {
-            message = "You have no children.";
-        } else if (numChildren === 1) {
-            message = "You have 1 child.";
-        } else {
-            message = "You have " + numChildren + " children.";
+    <title>JavaScript Assignment - Part 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
         }
-
-        // Display the message on the page
-        document.write("<p>" + message + "</p>");
-    </script>
+        h1 {
+            color: #2c3e50; /* Dark Blue */
+        }
+        ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0;
+        }
+        li {
+            margin: 10px 0; /* Add spacing between list items */
+        }
+        a {
+            font-size: 18px;
+            color: #2980b9; /* Bright Blue */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #e74c3c; /* Change color to red on hover */
+        }
+    </style>
 </head>
 <body>
+    <h1>JavaScript Assignment - Part 1</h1>
+    <p>Click on the links below to navigate to each problem's solution:</p>
+    <ul>
+        <li><a href="js1.html" target="_blank">Problem 1</a></li>
+        <li><a href="js2.html" target="_blank">Problem 2</a></li>
+        <li><a href="js3.html" target="_blank">Problem 3</a></li>
+        <li><a href="js4.html" target="_blank">Problem 4</a></li>
+        <li><a href="js5.html" target="_blank">Problem 5</a></li>
+        <li><a href="js6.html" target="_blank">Problem 6</a></li>
+    </ul>
 </body>
 </html>
